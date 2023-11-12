@@ -1,0 +1,21 @@
+QuantumHunts Task - 3
+Description
+This webpage is created as part of QuantumHunts Task - 3. It features a visually appealing layout with a gradient background, centered icons on resizable images, and utilizes the Bootstrap framework for responsive design.
+
+Preview
+Insert a screenshot or a live link to your webpage here.
+
+Getting Started
+To view this webpage, simply open the index.html file in a web browser. Ensure an internet connection to load the Bootstrap CSS and JavaScript libraries from content delivery networks (CDNs).
+
+Usage
+Open the index.html file in a web browser.
+Explore the page to see the responsive design and the animated gradient background.
+Each image in the grid has a center icon for added visual appeal.
+Customization
+Feel free to customize the content of the webpage as needed. You can replace the images in the img folder and update the references accordingly.
+
+Dependencies
+Bootstrap - Version 4.5.2
+jQuery - Version 3.5.1 Slim
+Popper.js - Version 2.9.3
