@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Merged Video</title>
+  
+  <link href="https://vjs.zencdn.net/7.14.3/video-js.css" rel="stylesheet">
+
+  <script src="https://vjs.zencdn.net/7.14.3/video.min.js"></script>
+</head>
+<body>
+  <h1>MERGING TWO VIDEOS</h1>
+  <video
+    id="mergedVideo"
+    class="video-js vjs-default-skin"
+    controls
+    width="640"
+    height="360"
+    data-setup='{ "techOrder": ["html5", "flash"], "sources": [{ "src": "./vid1.mp4", "type": "video/mp4" }] }'
+  >
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a web browser that
+      <a href="./vid1.mp4" target="_blank" rel="noopener">supports HTML5 video</a>
+    </p>
+  </video>
+
+  
+  <script>
+    var player = videojs('mergedVideo');
+    var isFirstVideo = true;
+
+    player.on('ended', function () {
+      if (isFirstVideo) {
+    
+        player.src([{ type: 'video/mp4', src: './vid2.mp4' }]);
+        player.play(); 
+        isFirstVideo = false;
+      } else {
+    
+        player.src([{ type: 'video/mp4', src: './vid1.mp4' }]);
+        player.play(); 
+        isFirstVideo = true;
+      }
+    });
+  </script>
+
+</body>
+</html>
