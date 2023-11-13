@@ -1,0 +1,17 @@
+Merged Video
+Description
+This webpage demonstrates the merging of two videos using the Video.js library. It provides a simple interface with a video player that switches between two video sources when one video ends, creating a looping effect.
+
+Getting Started
+To view this webpage, simply open the index.html file in a web browser. Ensure an internet connection to load the Video.js library from the content delivery network (CDN).
+
+Usage
+Open the index.html file in a web browser.
+The page will display a video player with controls.
+The initial video (vid1.mp4) will play, and when it ends, it will switch to the second video (vid2.mp4).
+The switching between videos will continue in a loop.
+Customization
+Feel free to customize the content of the webpage as needed. You can replace the video files (vid1.mp4 and vid2.mp4) and update the references accordingly.
+
+Dependencies
+Video.js - Version 7.14.3
